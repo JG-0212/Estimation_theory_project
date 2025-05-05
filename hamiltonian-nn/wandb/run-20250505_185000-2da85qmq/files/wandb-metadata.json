@@ -1,0 +1,45 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.10.7",
+  "startedAt": "2025-05-05T13:20:00.266587Z",
+  "args": [
+    "-t"
+  ],
+  "program": "C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\experiment-pend\\wandb_runner.py",
+  "codePath": "hamiltonian-nn\\experiment-pend\\wandb_runner.py",
+  "git": {
+    "remote": "https://github.com/me21b172/ET_Project.git",
+    "commit": "3a40f5b677c9276bc8e32f4720758b6aa9bbe9b6"
+  },
+  "email": "me21b172@smail.iitm.ac.in",
+  "root": "C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn",
+  "host": "DESKTOP-TURDO65",
+  "executable": "C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\my_env\\Scripts\\python.exe",
+  "codePathLocal": "experiment-pend\\wandb_runner.py",
+  "cpu_count": 6,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "492141801472",
+      "used": "453731409920"
+    }
+  },
+  "memory": {
+    "total": "8425947136"
+  },
+  "cpu": {
+    "count": 6,
+    "countLogical": 12
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce GTX 1650",
+      "memoryTotal": "4294967296",
+      "cudaCores": 1024,
+      "architecture": "Turing"
+    }
+  ],
+  "cudaVersion": "12.8"
+}

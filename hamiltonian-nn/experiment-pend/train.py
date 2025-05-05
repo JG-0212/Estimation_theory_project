@@ -6,6 +6,7 @@ import numpy as np
 import scipy.integrate
 solve_ivp = scipy.integrate.solve_ivp
 from tqdm import tqdm
+import wandb
 
 import os, sys
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -24,10 +25,13 @@ def get_args():
     parser.add_argument('--hidden_dim', default=200, type=int, help='hidden dimension of mlp')
     parser.add_argument('--learn_rate', default=1e-3, type=float, help='learning rate')
     parser.add_argument('--nonlinearity', default='tanh', type=str, help='neural net nonlinearity')
-    parser.add_argument('--total_steps', default=200, type=int, help='number of gradient steps')
+    parser.add_argument('--total_steps', default=2000, type=int, help='number of gradient steps')
     parser.add_argument('--print_every', default=200, type=int, help='number of gradient steps between prints')
+    parser.add_argument('--dropout', default=0.0, type=float, help='dropout for model')
+    parser.add_argument('--decay_param', default=1e-4, type=float, help='decay_param for model')
     parser.add_argument('--name', default='pend', type=str, help='only one option right now')
     parser.add_argument('--baseline', dest='baseline', action='store_true', help='run baseline or experiment?')
+    parser.add_argument('--wand_runs', dest='wand_runs', action='store_true', help='used to log wandb metrics')
     parser.add_argument('--new_loss', dest='new_loss', action='store_true', help='train hnn with new updated loss function?')
     parser.add_argument('--use_rk4', dest='use_rk4', action='store_true', help='integrate derivative with RK4')
     parser.add_argument('--verbose', dest='verbose', action='store_true', help='verbose?')
@@ -47,10 +51,10 @@ def train(args):
     print("Training baseline model:" if args.baseline else "Training HNN model:")
 
   output_dim = args.input_dim if args.baseline else 2
-  nn_model = MLP(args.input_dim, args.hidden_dim, output_dim, args.nonlinearity)
+  nn_model = MLP(args.input_dim, args.hidden_dim, output_dim,args.dropout ,args.nonlinearity)
   model = HNN(args.input_dim, differentiable_model=nn_model,
               field_type=args.field_type, baseline=args.baseline)
-  optim = torch.optim.Adam(model.parameters(), args.learn_rate, weight_decay=1e-4)
+  optim = torch.optim.Adam(model.parameters(), args.learn_rate, weight_decay=args.decay_param)
 
   # arrange data
   data = get_dataset(seed=args.seed)
@@ -99,13 +103,24 @@ def train(args):
     # run test data
     test_dxdt_hat = model.rk4_time_derivative(test_x) if args.use_rk4 else model.time_derivative(test_x)
     test_loss = L2_loss(test_dxdt, test_dxdt_hat)
-
+    if args.wand_runs:
+       wandb.log({
+          "test_loss":test_loss.item(),
+          "train_loss":loss.item()
+       })
     # logging
     stats['train_loss'].append(loss.item())
     stats['test_loss'].append(test_loss.item())
     if args.verbose and step % args.print_every == 0:
       print("step {}, train_loss {:.4e}, test_loss {:.4e}".format(step, loss.item(), test_loss.item()))
 
+  if args.wand_runs:
+    wandb.log({
+      "final_train_loss": train_dist.mean().item(),
+      "final_train_loss_std": train_dist.std().item()/np.sqrt(train_dist.shape[0]),
+      "final_test_loss": test_dist.mean().item(),
+      "final_test_loss_std": test_dist.std().item()/np.sqrt(test_dist.shape[0])
+    })
   train_dxdt_hat = model.time_derivative(x)
   train_dist = (dxdt - train_dxdt_hat)**2
   test_dxdt_hat = model.time_derivative(test_x)
@@ -126,13 +141,13 @@ def integrate_model(model, t_span, y0, **kwargs):
     return solve_ivp(fun=fun, t_span=t_span, y0=y0, **kwargs)
 if __name__ == "__main__":
     args = get_args()
+    print(args.baseline)
     model, stats = train(args)
 
-    if args.new_loss:
-       print("Hdbhb")
-    os.makedirs(args.save_dir) if not os.path.exists(args.save_dir) else None
-    label = '-baseline' if args.baseline else '-hnn'
-    label = '-new_loss' + label if args.new_loss else label
-    label = '-rk4' + label if args.use_rk4 else label
-    path = '{}/{}{}.tar'.format(args.save_dir, args.name, label)
-    torch.save(model.state_dict(), path)
+    if args.wand_runs:
+      os.makedirs(args.save_dir) if not os.path.exists(args.save_dir) else None
+      label = '-baseline' if args.baseline else '-hnn'
+      label = '-new_loss' + label if args.new_loss else label
+      label = '-rk4' + label if args.use_rk4 else label
+      path = '{}/{}{}.tar'.format(args.save_dir, args.name, label)
+      torch.save(model.state_dict(), path)

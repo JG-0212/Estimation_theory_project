@@ -1,0 +1,16 @@
+{"time":"2025-05-05T18:52:24.5479456+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\wandb\\run-20250505_185224-opv61dqa\\logs\\debug-core.log"}
+{"time":"2025-05-05T18:52:25.7999451+05:30","level":"INFO","msg":"created new stream","id":"opv61dqa"}
+{"time":"2025-05-05T18:52:25.7999451+05:30","level":"INFO","msg":"stream: started","id":"opv61dqa"}
+{"time":"2025-05-05T18:52:25.7999451+05:30","level":"INFO","msg":"sender: started","stream_id":"opv61dqa"}
+{"time":"2025-05-05T18:52:25.7999451+05:30","level":"INFO","msg":"handler: started","stream_id":"opv61dqa"}
+{"time":"2025-05-05T18:52:25.7999451+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"opv61dqa"}
+{"time":"2025-05-05T18:52:26.1109138+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-05T18:54:21.5110342+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-05T18:54:21.5110342+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-05T18:54:22.5243691+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.0717484,"progress":"558B/558B"}],"total_operations":1}}
+{"time":"2025-05-05T18:54:22.7894745+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-05T18:54:23.229222+05:30","level":"INFO","msg":"stream: closing","id":"opv61dqa"}
+{"time":"2025-05-05T18:54:23.229222+05:30","level":"INFO","msg":"sender: closed","stream_id":"opv61dqa"}
+{"time":"2025-05-05T18:54:23.2297319+05:30","level":"INFO","msg":"handler: closed","stream_id":"opv61dqa"}
+{"time":"2025-05-05T18:54:23.2297319+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"opv61dqa"}
+{"time":"2025-05-05T18:54:23.2297319+05:30","level":"INFO","msg":"stream: closed","id":"opv61dqa"}
