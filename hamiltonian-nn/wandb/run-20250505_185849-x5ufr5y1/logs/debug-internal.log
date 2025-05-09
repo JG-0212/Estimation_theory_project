@@ -1,1 +1,9 @@
 {"time":"2025-05-05T18:58:49.192179+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\wandb\\run-20250505_185849-x5ufr5y1\\logs\\debug-core.log"}
+{"time":"2025-05-05T18:58:49.6500832+05:30","level":"INFO","msg":"created new stream","id":"x5ufr5y1"}
+{"time":"2025-05-05T18:58:49.6500832+05:30","level":"INFO","msg":"stream: started","id":"x5ufr5y1"}
+{"time":"2025-05-05T18:58:49.6500832+05:30","level":"INFO","msg":"handler: started","stream_id":"x5ufr5y1"}
+{"time":"2025-05-05T18:58:49.6500832+05:30","level":"INFO","msg":"sender: started","stream_id":"x5ufr5y1"}
+{"time":"2025-05-05T18:58:49.6500832+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"x5ufr5y1"}
+{"time":"2025-05-05T18:58:49.9878256+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-05T19:04:51.223226+05:30","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/me21b172-indian-institute-of-technology-madras/HNN-Hyperparameter-Tuning/x5ufr5y1/file_stream"}
+{"time":"2025-05-05T19:04:51.224817+05:30","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/me21b172-indian-institute-of-technology-madras/HNN-Hyperparameter-Tuning/x5ufr5y1/file_stream: {\"error\":\"run HNN-Hyperparameter-Tuning/x5ufr5y1 not found while streaming file\"}"}

@@ -21,3 +21,5 @@ config: {'_wandb': {}}
 2025-05-05 18:58:50,068 INFO    Thread-20 (_run_job):28388 [wandb_run.py:_redirect():2483] Wrapping output streams.
 2025-05-05 18:58:50,069 INFO    Thread-20 (_run_job):28388 [wandb_run.py:_redirect():2506] Redirects installed.
 2025-05-05 18:58:50,069 INFO    Thread-20 (_run_job):28388 [wandb_init.py:init():1147] run started, returning control to user process
+2025-05-05 19:04:47,603 ERROR   Thread-8 (_heartbeat):28388 [internal_api.py:execute():406] [no run ID] 404 response executing GraphQL.
+2025-05-05 19:04:47,611 ERROR   Thread-8 (_heartbeat):28388 [internal_api.py:execute():407] [no run ID] {"errors":[{"message":"could not find agent stdid9d3 during agentHeartbeat","path":["agentHeartbeat"]}],"data":{"agentHeartbeat":null}}

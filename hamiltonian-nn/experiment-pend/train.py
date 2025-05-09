@@ -67,7 +67,7 @@ def train(args):
         n_points = int(timescale * (t_span[1] - t_span[0]))
         kwargs = {
             't_eval': np.linspace(t_span[0], t_span[1], n_points),
-            'rtol': 1e-12
+            'rtol': 1e-2
         }
         batch_size = n_points
   # vanilla train loop
@@ -114,13 +114,6 @@ def train(args):
     if args.verbose and step % args.print_every == 0:
       print("step {}, train_loss {:.4e}, test_loss {:.4e}".format(step, loss.item(), test_loss.item()))
 
-  if args.wand_runs:
-    wandb.log({
-      "final_train_loss": train_dist.mean().item(),
-      "final_train_loss_std": train_dist.std().item()/np.sqrt(train_dist.shape[0]),
-      "final_test_loss": test_dist.mean().item(),
-      "final_test_loss_std": test_dist.std().item()/np.sqrt(test_dist.shape[0])
-    })
   train_dxdt_hat = model.time_derivative(x)
   train_dist = (dxdt - train_dxdt_hat)**2
   test_dxdt_hat = model.time_derivative(test_x)
@@ -128,7 +121,13 @@ def train(args):
   print('Final train loss {:.4e} +/- {:.4e}\nFinal test loss {:.4e} +/- {:.4e}'
     .format(train_dist.mean().item(), train_dist.std().item()/np.sqrt(train_dist.shape[0]),
             test_dist.mean().item(), test_dist.std().item()/np.sqrt(test_dist.shape[0])))
-
+  if args.wand_runs:
+    wandb.log({
+      "final_train_loss": train_dist.mean().item(),
+      "final_train_loss_std": train_dist.std().item()/np.sqrt(train_dist.shape[0]),
+      "final_test_loss": test_dist.mean().item(),
+      "final_test_loss_std": test_dist.std().item()/np.sqrt(test_dist.shape[0])
+    })
   return model, stats
 
 def integrate_model(model, t_span, y0, **kwargs):
@@ -144,10 +143,11 @@ if __name__ == "__main__":
     print(args.baseline)
     model, stats = train(args)
 
-    if args.wand_runs:
+    if not args.wand_runs:
       os.makedirs(args.save_dir) if not os.path.exists(args.save_dir) else None
       label = '-baseline' if args.baseline else '-hnn'
       label = '-new_loss' + label if args.new_loss else label
       label = '-rk4' + label if args.use_rk4 else label
       path = '{}/{}{}.tar'.format(args.save_dir, args.name, label)
+      print("Model saved")
       torch.save(model.state_dict(), path)

@@ -9,8 +9,9 @@ def sweepConfig():
         "method": "bayes",  # Bayesian optimization
         "metric": {"name": "final_test_loss", "goal": "minimize"},  # Optimization target
         "parameters": {
-            "dropout": {"values": [0.0, 0.2, 0.4, 0.5]},
-            "decay_param": {"values": [1e-5, 1e-4, 1e-3, 1e-2]}
+            "dropout": {"values": [0.0]},
+            "decay_param": {"values": [1e-4, 1e-3, 1e-2]},
+            "learn_rate": {"values": [1e-4, 1e-3, 1e-2, 1e-1]}
         }
     }
     return config
@@ -30,7 +31,8 @@ def train_sweep():
         args = get_args()
         args.dropout = config.dropout
         args.decay_param = config.decay_param
-        args.total_steps = 4
+        args.learn_rate = config.learn_rate
+        args.total_steps = 40
         args.wand_runs = True
         args.new_loss = True
         # Train model with current configuration
@@ -38,7 +40,8 @@ def train_sweep():
         
     except Exception as e:
         print(f"[wandb/train] Error occurred: {e}")
-        wandb.finish()  # Ensure wandb run is properly closed
+        
+    wandb.finish()  # Ensure wandb run is properly closed
 
 def run_sweep():
     """Create and run the hyperparameter sweep"""
@@ -46,7 +49,8 @@ def run_sweep():
     sweep_id = wandb.sweep(sweep=sweepConfig(), project="HNN-Hyperparameter-Tuning")
     # Run hyperparameter search
     print("Starting hyperparameter sweep for dropout and decay parameters")
-    wandb.agent(sweep_id, function=train_sweep, count=3)  # 15 trials
+    wandb.agent(sweep_id, function=train_sweep, count=10)  # 15 trials
+    # wandb.agent("2my66ecw", function=train_sweep, count=10)
 
 if __name__ == "__main__":
     # Disable wandb code saving for cleaner runs
