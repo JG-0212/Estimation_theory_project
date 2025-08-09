@@ -23,6 +23,6 @@ The project dealt with estimating covariance of Bivariate Gaussian distribution 
 This exploratory project dealt with analyzing the original [Hamiltonian Neural Networks](https://github.com/greydanus/hamiltonian-nn) project and suggesting improvements on a case-by-case basis.
 
 **Contents:**  
-- [Source code files](Final%20Project:%20HNN/)
-- [Detailed project report](Final%20Project:%20HNN/Final_report.pdf)
-- [Final presentation](Final%20Project:%20HNN/End_sem_presentation.pdf)  
+- [Source code files](Final%20Project%3A%20HNN/)
+- [Detailed project report](Final%20Project%3A%20HNN/Final_report.pdf)
+- [Final presentation](Final%20Project%3A%20HNN/End_sem_presentation.pdf)  
