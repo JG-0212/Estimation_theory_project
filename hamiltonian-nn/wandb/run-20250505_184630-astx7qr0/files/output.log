@@ -1,6 +1,0 @@
-usage: wandb_runner.py [-h] [--input_dim INPUT_DIM] [--hidden_dim HIDDEN_DIM] [--learn_rate LEARN_RATE]
-                       [--nonlinearity NONLINEARITY] [--total_steps TOTAL_STEPS] [--print_every PRINT_EVERY] [--dropout DROPOUT]
-                       [--decay_param DECAY_PARAM] [--name NAME] [--baseline] [--wand_runs] [--new_loss] [--use_rk4] [--verbose]
-                       [--field_type FIELD_TYPE] [--seed SEED] [--save_dir SAVE_DIR]
-wandb_runner.py: error: unrecognized arguments: -t
-[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.

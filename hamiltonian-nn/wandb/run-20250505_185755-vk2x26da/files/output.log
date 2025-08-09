@@ -1,2 +1,0 @@
-100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.08it/s]
-[wandb/train] Error occurred: local variable 'train_dist' referenced before assignment

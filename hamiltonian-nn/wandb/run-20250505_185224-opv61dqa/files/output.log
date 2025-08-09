@@ -1,3 +1,0 @@
-Namespace(input_dim=2, hidden_dim=200, learn_rate=0.001, nonlinearity='tanh', total_steps=40, print_every=200, dropout=0, decay_param=0.0001, name='pend', baseline=False, wand_runs=True, new_loss=True, use_rk4=False, verbose=False, field_type='solenoidal', seed=0, save_dir='C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\experiment-pend', feature=True)
-100%|████████████████████████████████████████████████████████████████████████████████████████████| 41/41 [01:44<00:00,  2.56s/it]
-[wandb/train] Error occurred: local variable 'train_dist' referenced before assignment
