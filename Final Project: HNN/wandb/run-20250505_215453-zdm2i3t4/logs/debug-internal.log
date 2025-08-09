@@ -1,0 +1,16 @@
+{"time":"2025-05-05T21:54:53.4691778+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\wandb\\run-20250505_215453-zdm2i3t4\\logs\\debug-core.log"}
+{"time":"2025-05-05T21:54:54.1080421+05:30","level":"INFO","msg":"created new stream","id":"zdm2i3t4"}
+{"time":"2025-05-05T21:54:54.1080421+05:30","level":"INFO","msg":"stream: started","id":"zdm2i3t4"}
+{"time":"2025-05-05T21:54:54.1080421+05:30","level":"INFO","msg":"sender: started","stream_id":"zdm2i3t4"}
+{"time":"2025-05-05T21:54:54.1080421+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"zdm2i3t4"}
+{"time":"2025-05-05T21:54:54.1080421+05:30","level":"INFO","msg":"handler: started","stream_id":"zdm2i3t4"}
+{"time":"2025-05-05T21:54:54.3987223+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-05T21:55:46.5193451+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-05T21:55:46.5193451+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-05T21:55:47.5268269+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.3733658,"progress":"581B/581B"}],"total_operations":1}}
+{"time":"2025-05-05T21:55:47.5584821+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-05T21:55:47.9369417+05:30","level":"INFO","msg":"stream: closing","id":"zdm2i3t4"}
+{"time":"2025-05-05T21:55:47.9369417+05:30","level":"INFO","msg":"handler: closed","stream_id":"zdm2i3t4"}
+{"time":"2025-05-05T21:55:47.9369417+05:30","level":"INFO","msg":"sender: closed","stream_id":"zdm2i3t4"}
+{"time":"2025-05-05T21:55:47.9369417+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"zdm2i3t4"}
+{"time":"2025-05-05T21:55:47.9375045+05:30","level":"INFO","msg":"stream: closed","id":"zdm2i3t4"}

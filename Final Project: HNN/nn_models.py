@@ -7,7 +7,7 @@ from utils import choose_nonlinearity
 
 class MLP(torch.nn.Module):
   '''Just a salt-of-the-earth MLP'''
-  def __init__(self, input_dim, hidden_dim, output_dim, dropout = 0,nonlinearity='tanh'):
+  def __init__(self, input_dim, hidden_dim, output_dim, dropout = 0.0,nonlinearity='tanh'):
     super(MLP, self).__init__()
     self.linear1 = torch.nn.Linear(input_dim, hidden_dim)
     self.dropout1 = torch.nn.Dropout(dropout)
@@ -21,8 +21,8 @@ class MLP(torch.nn.Module):
     self.nonlinearity = choose_nonlinearity(nonlinearity)
 
   def forward(self, x, separate_fields=False):
-    h = self.nonlinearity( self.dropout1(self.linear1(x)) )
-    h = self.nonlinearity( self.dropout2(self.linear2(h)) )
+    h = self.nonlinearity( self.linear1(x) )
+    h = self.nonlinearity(self.linear2(h))
     return self.linear3(h)
 
 class MLPAutoencoder(torch.nn.Module):

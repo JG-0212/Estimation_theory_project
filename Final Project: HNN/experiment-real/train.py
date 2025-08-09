@@ -28,9 +28,15 @@ def get_args():
     parser.add_argument('--baseline', dest='baseline', action='store_true', help='run baseline or experiment?')
     parser.add_argument('--use_rk4', dest='use_rk4', action='store_true', help='integrate derivative with RK4')
     parser.add_argument('--seed', default=0, type=int, help='random seed')
+    parser.add_argument('--improve', default=False, type=str, help='whether to improve the model')
     parser.add_argument('--save_dir', default=THIS_DIR, type=str, help='where to save the trained model')
     parser.set_defaults(feature=True)
     return parser.parse_args()
+
+def get_next_point_with_model(model_fwd, y0, dt):
+    t0 = 0.0
+    dy = rk4(model_fwd, y0, t0, dt)   # shape: (B, 2)
+    return y0 + dy
 
 def train(args):
   # set random seed
@@ -55,17 +61,35 @@ def train(args):
 
   # vanilla train loop
   stats = {'train_loss': [], 'test_loss': []}
+  t_eval = np.linspace(0, 3, int(15*(3))) #prone to change
+  num_traj = int(len(x)/len(t_eval))
+  traj_len = len(t_eval)
+  small_t_eval = t_eval[1]
+  alpha = 1
+
+  model_fwd = model.rk4_time_derivative if args.use_rk4 else model.time_derivative
+
   for step in range(args.total_steps+1):
 
     # train step
     dxdt_hat = model.rk4_time_derivative(x, dt=1/6.) if args.use_rk4 else model.time_derivative(x)
     loss = L2_loss(dxdt, dxdt_hat)
+    if args.improve:
+      next_pts = get_next_point_with_model(model_fwd, x, small_t_eval)
+      next_pts[traj_len-1:-1:traj_len] = x[traj_len::traj_len]  #prevent penalization at end of trajectory
+      extra_loss = L2_loss(x[1:], next_pts[:-1])
+      loss += alpha*extra_loss
     loss.backward() ; optim.step() ; optim.zero_grad()
 
     # run validation
     test_dxdt_hat = model.time_derivative(test_x)
     test_loss = L2_loss(test_dxdt, test_dxdt_hat)
 
+    if args.improve:
+      test_next_pts = get_next_point_with_model(model_fwd, test_x, small_t_eval)
+      test_next_pts[traj_len-1:-1:traj_len] = test_x[traj_len::traj_len]
+      test_extra_loss = L2_loss(test_x[1:], test_next_pts[:-1])
+      test_loss += alpha*test_extra_loss
     # logging
     stats['train_loss'].append(loss.item())
     stats['test_loss'].append(test_loss.item())
@@ -90,5 +114,6 @@ if __name__ == "__main__":
     os.makedirs(args.save_dir) if not os.path.exists(args.save_dir) else None
     label = '-baseline' if args.baseline else '-hnn'
     label = '-rk4' + label if args.use_rk4 else label
+    label = '-improved'+label if args.improve else label
     path = '{}/{}{}.tar'.format(args.save_dir, args.name, label)
     torch.save(model.state_dict(), path)

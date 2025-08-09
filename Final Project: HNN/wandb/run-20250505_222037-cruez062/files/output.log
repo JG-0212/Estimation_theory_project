@@ -1,0 +1,2 @@
+  0%|                                                                                          | 0/41 [00:00<?, ?it/s]
+[wandb/train] Error occurred: Expected more than 1 value per channel when training, got input size torch.Size([1, 200])

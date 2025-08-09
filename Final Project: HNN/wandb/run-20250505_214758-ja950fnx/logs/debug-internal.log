@@ -1,0 +1,16 @@
+{"time":"2025-05-05T21:47:58.5462585+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\wandb\\run-20250505_214758-ja950fnx\\logs\\debug-core.log"}
+{"time":"2025-05-05T21:48:00.9493814+05:30","level":"INFO","msg":"created new stream","id":"ja950fnx"}
+{"time":"2025-05-05T21:48:00.9499622+05:30","level":"INFO","msg":"stream: started","id":"ja950fnx"}
+{"time":"2025-05-05T21:48:00.9499622+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ja950fnx"}
+{"time":"2025-05-05T21:48:00.9499622+05:30","level":"INFO","msg":"handler: started","stream_id":"ja950fnx"}
+{"time":"2025-05-05T21:48:00.9499622+05:30","level":"INFO","msg":"sender: started","stream_id":"ja950fnx"}
+{"time":"2025-05-05T21:48:01.3029712+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-05T21:48:58.9468902+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-05T21:48:58.9474297+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-05T21:48:59.9600822+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.3070247,"progress":"584B/584B"}],"total_operations":1}}
+{"time":"2025-05-05T21:48:59.9887296+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-05T21:49:00.3400076+05:30","level":"INFO","msg":"stream: closing","id":"ja950fnx"}
+{"time":"2025-05-05T21:49:00.3400076+05:30","level":"INFO","msg":"handler: closed","stream_id":"ja950fnx"}
+{"time":"2025-05-05T21:49:00.3400076+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"ja950fnx"}
+{"time":"2025-05-05T21:49:00.3400076+05:30","level":"INFO","msg":"sender: closed","stream_id":"ja950fnx"}
+{"time":"2025-05-05T21:49:00.3405372+05:30","level":"INFO","msg":"stream: closed","id":"ja950fnx"}

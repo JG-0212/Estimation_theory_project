@@ -1,0 +1,8 @@
+wandb_version: 1
+
+decay_param:
+  value: 0.01
+dropout:
+  value: 0
+learn_rate:
+  value: 0.001

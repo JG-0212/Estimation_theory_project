@@ -1,0 +1,16 @@
+{"time":"2025-05-05T21:50:36.4945775+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\wandb\\run-20250505_215036-csma4glo\\logs\\debug-core.log"}
+{"time":"2025-05-05T21:50:38.1834827+05:30","level":"INFO","msg":"created new stream","id":"csma4glo"}
+{"time":"2025-05-05T21:50:38.1834827+05:30","level":"INFO","msg":"stream: started","id":"csma4glo"}
+{"time":"2025-05-05T21:50:38.1834827+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"csma4glo"}
+{"time":"2025-05-05T21:50:38.1834827+05:30","level":"INFO","msg":"sender: started","stream_id":"csma4glo"}
+{"time":"2025-05-05T21:50:38.1834827+05:30","level":"INFO","msg":"handler: started","stream_id":"csma4glo"}
+{"time":"2025-05-05T21:50:38.479214+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-05T21:51:57.46486+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-05T21:51:57.4654163+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-05T21:51:58.4719732+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.4025347,"progress":"318B/318B"},{"desc":"uploading config.yaml","runtime_seconds":0.1251507,"progress":"583B/583B"}],"total_operations":2}}
+{"time":"2025-05-05T21:51:58.7032148+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-05T21:51:59.0521225+05:30","level":"INFO","msg":"stream: closing","id":"csma4glo"}
+{"time":"2025-05-05T21:51:59.0521225+05:30","level":"INFO","msg":"handler: closed","stream_id":"csma4glo"}
+{"time":"2025-05-05T21:51:59.0521225+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"csma4glo"}
+{"time":"2025-05-05T21:51:59.0521225+05:30","level":"INFO","msg":"sender: closed","stream_id":"csma4glo"}
+{"time":"2025-05-05T21:51:59.0526367+05:30","level":"INFO","msg":"stream: closed","id":"csma4glo"}

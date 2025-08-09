@@ -1,0 +1,16 @@
+{"time":"2025-05-05T22:20:37.6226988+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\wandb\\run-20250505_222037-cruez062\\logs\\debug-core.log"}
+{"time":"2025-05-05T22:20:38.8778737+05:30","level":"INFO","msg":"created new stream","id":"cruez062"}
+{"time":"2025-05-05T22:20:38.8778737+05:30","level":"INFO","msg":"stream: started","id":"cruez062"}
+{"time":"2025-05-05T22:20:38.8778737+05:30","level":"INFO","msg":"handler: started","stream_id":"cruez062"}
+{"time":"2025-05-05T22:20:38.8778737+05:30","level":"INFO","msg":"sender: started","stream_id":"cruez062"}
+{"time":"2025-05-05T22:20:38.8778737+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"cruez062"}
+{"time":"2025-05-05T22:20:39.2578731+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-05T22:20:48.3069542+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-05T22:20:48.3069542+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-05T22:20:49.2816166+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-05T22:20:49.3183746+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 0-1","runtime_seconds":0.036758}],"total_operations":1}}
+{"time":"2025-05-05T22:20:49.6627948+05:30","level":"INFO","msg":"stream: closing","id":"cruez062"}
+{"time":"2025-05-05T22:20:49.6627948+05:30","level":"INFO","msg":"handler: closed","stream_id":"cruez062"}
+{"time":"2025-05-05T22:20:49.6627948+05:30","level":"INFO","msg":"sender: closed","stream_id":"cruez062"}
+{"time":"2025-05-05T22:20:49.6627948+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"cruez062"}
+{"time":"2025-05-05T22:20:49.6633333+05:30","level":"INFO","msg":"stream: closed","id":"cruez062"}

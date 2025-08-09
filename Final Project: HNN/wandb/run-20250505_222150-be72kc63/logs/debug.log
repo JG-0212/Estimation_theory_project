@@ -1,0 +1,30 @@
+2025-05-05 22:21:50,456 INFO    Thread-9 (_run_job):27684 [wandb_setup.py:_flush():68] Current SDK version is 0.19.10
+2025-05-05 22:21:50,456 INFO    Thread-9 (_run_job):27684 [wandb_setup.py:_flush():68] Configure stats pid to 27684
+2025-05-05 22:21:50,456 INFO    Thread-9 (_run_job):27684 [wandb_setup.py:_flush():68] Loading settings from C:\Users\aksha\.config\wandb\settings
+2025-05-05 22:21:50,456 INFO    Thread-9 (_run_job):27684 [wandb_setup.py:_flush():68] Loading settings from C:\Users\aksha\OneDrive\Desktop\codes\CP\ET_Project\hamiltonian-nn\wandb\settings
+2025-05-05 22:21:50,456 INFO    Thread-9 (_run_job):27684 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-05-05 22:21:50,465 INFO    Thread-9 (_run_job):27684 [wandb_init.py:setup_run_log_directory():724] Logging user logs to C:\Users\aksha\OneDrive\Desktop\codes\CP\ET_Project\hamiltonian-nn\wandb\run-20250505_222150-be72kc63\logs\debug.log
+2025-05-05 22:21:50,465 INFO    Thread-9 (_run_job):27684 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to C:\Users\aksha\OneDrive\Desktop\codes\CP\ET_Project\hamiltonian-nn\wandb\run-20250505_222150-be72kc63\logs\debug-internal.log
+2025-05-05 22:21:50,465 INFO    Thread-9 (_run_job):27684 [wandb_init.py:init():852] calling init triggers
+2025-05-05 22:21:50,465 INFO    Thread-9 (_run_job):27684 [wandb_init.py:init():857] wandb.init called with sweep_config: {'decay_param': 1, 'dropout': 0, 'learn_rate': 0.1}
+config: {'_wandb': {}}
+2025-05-05 22:21:50,465 INFO    Thread-9 (_run_job):27684 [wandb_init.py:init():893] starting backend
+2025-05-05 22:21:50,465 INFO    Thread-9 (_run_job):27684 [wandb_init.py:init():897] sending inform_init request
+2025-05-05 22:21:50,483 INFO    Thread-9 (_run_job):27684 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-05-05 22:21:50,486 INFO    Thread-9 (_run_job):27684 [wandb_init.py:init():907] backend started and connected
+2025-05-05 22:21:50,486 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_config_callback():1429] config_cb None None {'decay_param': 1, 'dropout': 0, 'learn_rate': 0.1}
+2025-05-05 22:21:50,487 INFO    Thread-9 (_run_job):27684 [wandb_init.py:init():1002] updated telemetry
+2025-05-05 22:21:50,689 INFO    Thread-9 (_run_job):27684 [wandb_init.py:init():1026] communicating run to backend with 90.0 second timeout
+2025-05-05 22:21:52,390 INFO    Thread-9 (_run_job):27684 [wandb_init.py:init():1101] starting run threads in backend
+2025-05-05 22:21:52,498 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_console_start():2566] atexit reg
+2025-05-05 22:21:52,498 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_redirect():2414] redirect: wrap_raw
+2025-05-05 22:21:52,498 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_redirect():2483] Wrapping output streams.
+2025-05-05 22:21:52,499 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_redirect():2506] Redirects installed.
+2025-05-05 22:21:52,502 INFO    Thread-9 (_run_job):27684 [wandb_init.py:init():1147] run started, returning control to user process
+2025-05-05 22:22:09,469 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_finish():2314] finishing run me21b172-indian-institute-of-technology-madras/HNN-Hyperparameter-Tuning/be72kc63
+2025-05-05 22:22:09,469 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_atexit_cleanup():2531] got exitcode: 0
+2025-05-05 22:22:09,469 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_restore():2513] restore
+2025-05-05 22:22:09,470 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_restore():2519] restore done
+2025-05-05 22:22:10,924 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_footer_history_summary_info():4160] rendering history
+2025-05-05 22:22:10,924 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_footer_history_summary_info():4192] rendering summary
+2025-05-05 22:22:10,924 INFO    Thread-9 (_run_job):27684 [wandb_run.py:_footer_sync_info():4121] logging synced files

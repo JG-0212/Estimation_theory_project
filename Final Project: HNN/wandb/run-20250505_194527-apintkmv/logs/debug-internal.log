@@ -1,0 +1,16 @@
+{"time":"2025-05-05T19:45:27.0120683+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\wandb\\run-20250505_194527-apintkmv\\logs\\debug-core.log"}
+{"time":"2025-05-05T19:45:28.2660477+05:30","level":"INFO","msg":"created new stream","id":"apintkmv"}
+{"time":"2025-05-05T19:45:28.2660477+05:30","level":"INFO","msg":"stream: started","id":"apintkmv"}
+{"time":"2025-05-05T19:45:28.2660477+05:30","level":"INFO","msg":"handler: started","stream_id":"apintkmv"}
+{"time":"2025-05-05T19:45:28.2660477+05:30","level":"INFO","msg":"sender: started","stream_id":"apintkmv"}
+{"time":"2025-05-05T19:45:28.2660477+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"apintkmv"}
+{"time":"2025-05-05T19:45:28.6033672+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-05T19:47:13.6202053+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-05T19:47:14.1509007+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-05T19:47:14.6374932+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 38-41, summary, console lines 0-2","runtime_seconds":0.3046533},{"desc":"uploading output.log","runtime_seconds":0.176212,"progress":"399B/399B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.176212,"progress":"323B/323B"}],"total_operations":3}}
+{"time":"2025-05-05T19:47:15.08422+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-05T19:47:15.3996962+05:30","level":"INFO","msg":"stream: closing","id":"apintkmv"}
+{"time":"2025-05-05T19:47:15.3996962+05:30","level":"INFO","msg":"handler: closed","stream_id":"apintkmv"}
+{"time":"2025-05-05T19:47:15.3996962+05:30","level":"INFO","msg":"sender: closed","stream_id":"apintkmv"}
+{"time":"2025-05-05T19:47:15.3996962+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"apintkmv"}
+{"time":"2025-05-05T19:47:15.3996962+05:30","level":"INFO","msg":"stream: closed","id":"apintkmv"}

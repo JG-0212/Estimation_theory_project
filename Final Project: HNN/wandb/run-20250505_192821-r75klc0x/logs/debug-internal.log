@@ -1,0 +1,16 @@
+{"time":"2025-05-05T19:28:21.2095379+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\wandb\\run-20250505_192821-r75klc0x\\logs\\debug-core.log"}
+{"time":"2025-05-05T19:28:23.3817556+05:30","level":"INFO","msg":"created new stream","id":"r75klc0x"}
+{"time":"2025-05-05T19:28:23.3817556+05:30","level":"INFO","msg":"stream: started","id":"r75klc0x"}
+{"time":"2025-05-05T19:28:23.3817556+05:30","level":"INFO","msg":"sender: started","stream_id":"r75klc0x"}
+{"time":"2025-05-05T19:28:23.3817556+05:30","level":"INFO","msg":"handler: started","stream_id":"r75klc0x"}
+{"time":"2025-05-05T19:28:23.3817556+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"r75klc0x"}
+{"time":"2025-05-05T19:28:23.7705949+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-05T19:28:38.6784788+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-05T19:28:38.6784788+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-05T19:28:39.6902082+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.4036508,"progress":"558B/558B"},{"desc":"uploading history steps 0-41, summary, console lines 0-2","runtime_seconds":0.1431674}],"total_operations":2}}
+{"time":"2025-05-05T19:28:39.7384167+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-05T19:28:40.226855+05:30","level":"INFO","msg":"stream: closing","id":"r75klc0x"}
+{"time":"2025-05-05T19:28:40.226855+05:30","level":"INFO","msg":"handler: closed","stream_id":"r75klc0x"}
+{"time":"2025-05-05T19:28:40.226855+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"r75klc0x"}
+{"time":"2025-05-05T19:28:40.2288652+05:30","level":"INFO","msg":"sender: closed","stream_id":"r75klc0x"}
+{"time":"2025-05-05T19:28:40.2298426+05:30","level":"INFO","msg":"stream: closed","id":"r75klc0x"}

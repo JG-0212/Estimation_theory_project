@@ -1,0 +1,7 @@
+{"time":"2025-05-05T19:47:18.4060719+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\wandb\\run-20250505_194718-cb0zrpg9\\logs\\debug-core.log"}
+{"time":"2025-05-05T19:47:18.8744758+05:30","level":"INFO","msg":"created new stream","id":"cb0zrpg9"}
+{"time":"2025-05-05T19:47:18.8744758+05:30","level":"INFO","msg":"stream: started","id":"cb0zrpg9"}
+{"time":"2025-05-05T19:47:18.8744758+05:30","level":"INFO","msg":"sender: started","stream_id":"cb0zrpg9"}
+{"time":"2025-05-05T19:47:18.8744758+05:30","level":"INFO","msg":"handler: started","stream_id":"cb0zrpg9"}
+{"time":"2025-05-05T19:47:18.8744758+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"cb0zrpg9"}
+{"time":"2025-05-05T19:47:19.1814732+05:30","level":"INFO","msg":"Starting system monitor"}

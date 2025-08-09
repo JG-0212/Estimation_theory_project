@@ -1,0 +1,15 @@
+{"time":"2025-05-05T18:41:58.3659985+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\aksha\\OneDrive\\Desktop\\codes\\CP\\ET_Project\\hamiltonian-nn\\wandb\\run-20250505_184158-69bsa2wn\\logs\\debug-core.log"}
+{"time":"2025-05-05T18:41:58.8592043+05:30","level":"INFO","msg":"created new stream","id":"69bsa2wn"}
+{"time":"2025-05-05T18:41:58.8592043+05:30","level":"INFO","msg":"stream: started","id":"69bsa2wn"}
+{"time":"2025-05-05T18:41:58.8592043+05:30","level":"INFO","msg":"sender: started","stream_id":"69bsa2wn"}
+{"time":"2025-05-05T18:41:58.8592043+05:30","level":"INFO","msg":"handler: started","stream_id":"69bsa2wn"}
+{"time":"2025-05-05T18:41:58.8592043+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"69bsa2wn"}
+{"time":"2025-05-05T18:41:59.1921164+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-05T18:41:59.6476987+05:30","level":"INFO","msg":"stream: closing","id":"69bsa2wn"}
+{"time":"2025-05-05T18:41:59.6476987+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-05T18:41:59.6476987+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-05T18:42:01.8979972+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-05T18:42:02.2296775+05:30","level":"INFO","msg":"handler: closed","stream_id":"69bsa2wn"}
+{"time":"2025-05-05T18:42:02.2296775+05:30","level":"INFO","msg":"sender: closed","stream_id":"69bsa2wn"}
+{"time":"2025-05-05T18:42:02.2296775+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"69bsa2wn"}
+{"time":"2025-05-05T18:42:02.230186+05:30","level":"INFO","msg":"stream: closed","id":"69bsa2wn"}
