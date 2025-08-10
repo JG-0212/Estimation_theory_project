@@ -21,7 +21,7 @@ The project required us to analyze the Maximum Likelihood estimators of the mean
 The project dealt with estimating covariance of Bivariate Gaussian distribution using techniques like Maximum Likelihood, Bayesian with conjugate prior (inverse Wishart), non-informative prior (Jeffrey's prior), Monte Carlo Bayesian Estimation, Gibbs sampling and Hierarchial Bayes estimation.
 
 **Contents:**  
-- [Problem statement](Mini%20Project%202/Mini_Project_2.pdf)
+- [Problem statement](Mini%20Project%202/Mini%20Project%202.pdf)
 - [Source code notebook](Mini%20Project%202/Code.ipynb)
 - [Detailed project report](Mini%20Project%202/ET_Mini_Project_2.pdf)
 
