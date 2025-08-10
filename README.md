@@ -1,6 +1,12 @@
 # Estimation Theory Projects Repository
 ---
 
+## Contributors 
+- J Jayagowtham, IIT Madras
+- Anuj Said Jagannath, IIT Madras
+- Shivsurya, IIT Madras
+- Praveen Prasath, IIT Madras 
+  
 ## Mini Project 1
 **Description:**  
 The project required us to analyze the Maximum Likelihood estimators of the mean of Normal, Laplace and Cauchy distributions 
