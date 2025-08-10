@@ -12,6 +12,7 @@
 The project required us to analyze the Maximum Likelihood estimators of the mean of Normal, Laplace and Cauchy distributions 
 
 **Contents:**  
+- [Problem statement](Mini%20Project%201/ee5111_miniproject1_2025.pdf)
 - [Source code notebook](Mini%20Project%201/Project.ipynb)
 - [Detailed project report](Mini%20Project%201/ET_Mini_Project_1.pdf)
 
@@ -20,13 +21,14 @@ The project required us to analyze the Maximum Likelihood estimators of the mean
 The project dealt with estimating covariance of Bivariate Gaussian distribution using techniques like Maximum Likelihood, Bayesian with conjugate prior (inverse Wishart), non-informative prior (Jeffrey's prior), Monte Carlo Bayesian Estimation, Gibbs sampling and Hierarchial Bayes estimation.
 
 **Contents:**  
+- [Problem statement](Mini%20Project%202/Mini_Project_2.pdf)
 - [Source code notebook](Mini%20Project%202/Code.ipynb)
 - [Detailed project report](Mini%20Project%202/ET_Mini_Project_2.pdf)
 
 
 ## Final project: Hamiltonian Neural Networks
 **Description:**  
-This exploratory project dealt with analyzing the original [Hamiltonian Neural Networks](https://github.com/greydanus/hamiltonian-nn) project and suggesting improvements on a case-by-case basis.
+This exploratory project dealt with analyzing the original [Hamiltonian Neural Networks](https://github.com/greydanus/hamiltonian-nn) project and suggesting improvements on a case-by-case basis. The paper was chosen based on a list of potential papers presented in class.
 
 **Contents:**  
 - [Source code files](Final%20Project%3A%20HNN/)
