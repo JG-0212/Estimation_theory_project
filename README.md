@@ -12,7 +12,7 @@
 The project required us to analyze the Maximum Likelihood estimators of the mean of Normal, Laplace and Cauchy distributions 
 
 **Contents:**  
-- [Problem statement](Mini%20Project%201/ee5111_miniproject1_2025.pdf)
+- [Problem statement](Mini%20Project%201/ee5111-miniproject1-2025.pdf)
 - [Source code notebook](Mini%20Project%201/Project.ipynb)
 - [Detailed project report](Mini%20Project%201/ET_Mini_Project_1.pdf)
 
